@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bykaj.com/sitemap.xml

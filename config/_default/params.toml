@@ -19,7 +19,7 @@ replyByEmail = false
 
 disableImageOptimization = false
 disableImageOptimizationMD = false
-disableTextInHeader = true
+disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images
@@ -159,7 +159,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   globalWidget = true
   # globalWidgetMessage = "Hello"
   # globalWidgetColor = "#FFDD00"
-  globalWidgetColor = "#606060ff"
+  globalWidgetColor = "#747474ff"
   globalWidgetPosition = "Right"
 
 [verification]

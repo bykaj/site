@@ -2,24 +2,24 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "ByKaj"
+title = "byKaj"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/author-kaj.png"
+  logo = "img/logo-header.png"
   # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
-  # copyright = "Copy, _right?_ :thinking_face:"
+  description = "This personal site showcases a comprehensive home infrastructure project featuring a self-managed Kubernetes cluster with automated deployments through Flux, dependency management via Renovate, and CI/CD pipelines using GitHub Actions, complete with detailed documentation on hardware setup, DNS configuration, and cloud integrations."
+  copyright = "&copy; { year } Kaj Visser. All rights reserved."
 
 [params.author]
   name = "Kaj"
   image = "img/author-kaj.png"
 #   imageQuality = 96
-#   headline = "I'm only human"
-#   bio = "A little bit about you"
+  headline = "Home Lab, Enterprise Heart: Where Hobby Meets High-Tech Infrastructure"
+  bio = "Product Manager by day, DevOps tinkerer by night."
   links = [
     { github = "https://github.com/bykaj" },
     { mastodon = "https://mastodon.social/@bykaj" }

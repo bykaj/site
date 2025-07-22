@@ -10,20 +10,20 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
-[[main]]
-  name = "Blog"
-  pageRef = "posts"
-  weight = 10
+#[[main]]
+#  name = "Blog"
+#  pageRef = "posts"
+#  weight = 10
 
 [[main]]
   name = "Guides"
   pageRef = "guides"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 30
+  weight = 20
 
 #[[main]]
 #  name = "Parent"

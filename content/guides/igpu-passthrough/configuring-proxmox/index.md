@@ -19,7 +19,7 @@ Edit the GRUB configuration file `/etc/default/grub` and update the `GRUB_CMDLIN
 ```bash
 GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on iommu=pt i915.enable_gvt=1 pcie_acs_override=downstream,multifunction"
 ```
-This is why you need this: `intel_iommu=on iommu=pt i915.enable_gvt=1` enables the core trio of IOMMU, passthrough, and GVT-g (mediated devices) functionality. The `pcie_acs_override=downstream,multifunction` parameter does the heavy lifting by forcing hardware into separate IOMMU groups. No more dealing with device clusters – you get individual control over each piece of hardware, plus the sweet benefit of a stable, non-crashing host.ß
+This is why you need this: `intel_iommu=on iommu=pt i915.enable_gvt=1` enables the core trio of IOMMU, passthrough, and GVT-g (mediated devices) functionality. The `pcie_acs_override=downstream,multifunction` parameter does the heavy lifting by forcing hardware into separate IOMMU groups. No more dealing with device clusters – you get individual control over each piece of hardware, plus the sweet benefit of a stable, non-crashing host.
 
 Apply these new boot parameters by running:
 ```bash
@@ -56,7 +56,7 @@ Restart your Proxmox host for all changes to take effect:
 ```bash
 sudo reboot
 ```
-While rebooting, make sure you enabled all virtualization options in your BIOS like described [here](#bios-virtualization-settings).
+While rebooting, make sure you enabled all virtualization options in your BIOS like described [here]({{< ref "overview#bios-virtualization-settings" >}}).
 
 ## Step 5: Verify Configuration After Reboot
 After reboot, verify the devices are properly separated into different IOMMU groups. Replace `<node>` with your actual PVE node name:

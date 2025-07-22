@@ -13,7 +13,7 @@ showAuthor: true
 showReadingTime: true
 ---
 ## Overview
-Let's face it: GPUs are too valueable to leave idle. This guide shows you how to squeeze every drop of performance from your Intel iGPU by sharing it across your entire virtualization stack – from [Proxmox VE](https://www.proxmox.com/) host to Kubernetes pods. Your media servers will thank you, your power bill will love you, and yes, you'll still have a console to admire your work. Just don't expect to train your next AI model with this setup – leave those workloads to the big GPUs.
+Let's face it: GPUs are too valuable to leave idle. This guide shows you how to squeeze every drop of performance from your Intel iGPU by sharing it across your entire virtualization stack – from [Proxmox VE](https://www.proxmox.com/) host to Kubernetes pods. Your media servers will thank you, your power bill will love you, and yes, you'll still have a console to admire your work. Just don't expect to train your next AI model with this setup – leave those workloads to the big GPUs.
 
 What we're trying to accomplish:
 {{< mermaid >}}

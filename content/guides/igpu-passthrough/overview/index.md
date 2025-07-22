@@ -47,7 +47,7 @@ Before anything else works, you'll need to enable the virtualization trinity in 
 - VT-x (Intel Virtualization Technology)
 - And any other virtualization-related option you'll can find
 
-You can do this in [Step 4](#step-4-reboot) where you have to reboot your host anyway.
+You can do this in [Step 4]({{< ref "configuring-proxmox#step-4-reboot" >}}) where you have to reboot your host anyway.
 
 ### Disable VM Autostart (Optional)
 To make your life easier, disable the autostart for the Kubernetes node VMs in Proxmox VE so they stay in a stopped state after the host reboot. Re-enable it when you're finished with this guide.

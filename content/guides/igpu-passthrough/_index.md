@@ -9,6 +9,6 @@ tags: ["guide", "gpu", "virtualization", "kubernetes", "intel", "proxmox", "k3s"
 Share the GPU Love: Intel iGPU Split Passthrough to Kubernetes Containers
 {{< /lead >}}
 
-Transform your virtualization stack with Intel iGPU GVT-g split passthrough! Route GPU power from [Proxmox VE](https://www.proxmox.com/) hosts through Kubernetes VMs straight to your containers – hello hardware-accelerated [Jellyfin](https://jellyfin.org/) and [Plex](https://plex.tv/)! Bonus: your Proxmox console stays functional. Just don't expect to train your next AI model with this setup – leave those workloads to the big GPUs.
+Let's face it: GPUs are too valueable to leave idle. This guide shows you how to squeeze every drop of performance from your Intel iGPU by sharing it across your entire virtualization stack – from Proxmox host to Kubernetes pods. Your media servers will thank you, your power bill will love you, and yes, you'll still have a console to admire your work. Just don't expect to train your next AI model with this setup – leave those workloads to the big GPUs.
 
 ---

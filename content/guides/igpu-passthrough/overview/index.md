@@ -45,7 +45,7 @@ Before anything else works, you'll need to enable the virtualization trinity in 
 - VT-d (Intel Virtualization for Directed I/O)
 - IOMMU (Input-Output Memory Management Unit)
 - VT-x (Intel Virtualization Technology)
-- And any other virtualization-related option you'll can find
+- And any other virtualization-related option you can find
 
 You can do this in [Step 4]({{< ref "configuring-proxmox#step-4-reboot" >}}) where you have to reboot your host anyway.
 

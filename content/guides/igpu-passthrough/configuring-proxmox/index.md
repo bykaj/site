@@ -79,7 +79,7 @@ Your output should look similar to this:
 │ 0x040380 │ 0xa348 │ 0000:00:1f.3 │          9 │ 0x8086 │ Cannon Lake PCH cAVS
 ...
 ```
-Take note of the GPU ID (which is `0000:02:00.0` in this example), as you'll use it in the next step.
+Take note of the GPU ID (which is `0000:00:02.0` in this example), as you'll use it in the next step.
 
 ## Step 6: Confirm GVT-g Support
 Verify that GVT-g split is working and mediated devices are available. Replace `<gpu id>` with your GPU's ID from the previous step:

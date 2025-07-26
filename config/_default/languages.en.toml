@@ -22,5 +22,6 @@ title = "byKaj"
   bio = "Product Manager by day, DevOps tinkerer by night."
   links = [
     { github = "https://github.com/bykaj" },
-    { mastodon = "https://mastodon.social/@bykaj" }
+    { mastodon = "https://mastodon.social/@bykaj" },
+    { bluesky = "https://bsky.app/profile/bykaj.com" }
   ]

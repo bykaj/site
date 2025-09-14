@@ -23,7 +23,7 @@ kubectl label nodes <node-name> intel.feature.node.kubernetes.io/gpu=true
 
 ### Step 2: Install Intel Device Plugin Components
 {{< alert icon="circle-info" >}}
-**NOTE**<br />**Update (July 2025):** When I first documented this process, I was living the manual life – `helm install` this, `kubectl apply` that. Since then, I've migrated to FluxCD for GitOps-based deployments. For those interested in the automated approach, my [home-ops repository](https://github.com/bykaj/home-ops/tree/main/kubernetes/apps/kube-system/intel-device-plugin) shows how to deploy Intel Device Plugins declaratively.
+**NOTE**<br />**Update (July 2025):** When I first documented this process, I was living the manual life – `helm install` this, `kubectl apply` that. Since then, I've migrated to FluxCD for GitOps-based deployments. For those interested in the automated approach, my [home-ops repository](https://github.com/bykaj/home-ops/tree/main/kubernetes/apps/system/intel-device-plugin) shows how to deploy Intel Device Plugins declaratively.
 {{< /alert >}}
 
 Grab the Intel Helm charts and update:
@@ -34,7 +34,7 @@ helm repo update
 
 Deploy the Device Plugin Operator:
 ```bash
-helm install --namespace=kube-system intel-device-plugins-operator intel/intel-device-plugins-operator
+helm install --namespace=system intel-device-plugins-operator intel/intel-device-plugins-operator
 ```
 
 ### Step 3: Configure the GPU Device Plugin
@@ -47,7 +47,7 @@ nodeFeatureRule: false  # Disable automatic node feature discovery
 
 Deploy the GPU plugin with your created config:
 ```bash
-helm install --namespace=kube-system intel-device-plugins-gpu intel/intel-device-plugins-gpu -f values.yaml
+helm install --namespace=system intel-device-plugins-gpu intel/intel-device-plugins-gpu -f values.yaml
 ```
 
 ## Using GPU Resources

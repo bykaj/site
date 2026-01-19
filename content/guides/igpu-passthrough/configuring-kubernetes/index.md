@@ -24,6 +24,7 @@ kubectl label nodes <node-name> intel.feature.node.kubernetes.io/gpu=true
 ### Step 2: Install Intel Device Plugin Components
 {{< alert icon="circle-info" >}}
 **NOTE**<br />**Update (July 2025):** When I first documented this process, I was living the manual life – `helm install` this, `kubectl apply` that. Since then, I've migrated to FluxCD for GitOps-based deployments. For those interested in the automated approach, my [home-ops repository](https://github.com/bykaj/home-ops/tree/main/kubernetes/apps/system/intel-device-plugin) shows how to deploy Intel Device Plugins declaratively.
+<br />**Update (October 2025):** And... it's gone. The Intel Device Plugins in my repo I mean. I migrated to the [Intel Resource Drivers](https://github.com/intel/intel-resource-drivers-for-kubernetes) (in beta!) by using Dynamic Resource Allocation (DRA) and a Container Device Interface (CDI) for Kubernetes. This [commit](https://github.com/bykaj/home-ops/commit/be4131c5dc3432f4124101e2af1bd7cfcdc457ee) outlines the changes.
 {{< /alert >}}
 
 Grab the Intel Helm charts and update:

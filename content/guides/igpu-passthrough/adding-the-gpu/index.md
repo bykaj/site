@@ -39,7 +39,7 @@ Alternatively, disable Secure Boot through the VM's BIOS:
 ## Step 3: Install GPU Drivers
 Your approach depends on your OS.
 
-### For Talos Systens
+### For Talos Systems
 Add the official `i915` system extension to your installation. Extension management is beyond this guide's scope, but here's what you need:
 ```yaml
 customization:
